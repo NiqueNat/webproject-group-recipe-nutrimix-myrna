@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from './pages/Home'
-import RecipeDetail from './page/RecipeDetail' // 导入 RecipeDetail 组件
+import RecipeDetail from './pages/RecipeDetail' // 导入 RecipeDetail 组件
 
 <Routes>
   <Route index element={<Home />} />
