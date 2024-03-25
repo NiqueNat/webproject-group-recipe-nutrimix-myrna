@@ -6,14 +6,15 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route index element={<Home />} />
+        <Route path="/" element={<Home />} /> {/* 注意此处的更改 */}
         <Route path="/home" element={<Home />} />
-        <Route path="/recipe-detail" element={<RecipeDetail />} /> {/* 添加新路径 */}
+        <Route path="/recipedetail" element={<RecipeDetail />} />
       </Routes>
     </BrowserRouter>
   );
 }
 
 export default App;
+
 
 
