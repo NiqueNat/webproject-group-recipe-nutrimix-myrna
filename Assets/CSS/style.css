@@ -58,7 +58,6 @@ body::before {
 }
 
 #phase2Accordion .card-header {
-    /* background-color: #f0f8ff; */
     color: #333;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -77,6 +76,35 @@ body::before {
 }
 
 #phase2Accordion .card-body {
+    background-color: #fff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* Phase 3 - Execute */
+#phase3Accordion {
+    margin: 20px 0;   
+}
+
+#phase3Accordion .card-header {
+    color: #333;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+#phase3Accordion .btn-link {
+    color: #333;
+    text-decoration: none;
+}
+
+#phase3Accordion .btn-link:hover,
+#phase3Accordion .btn-link:focus {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#phase3Accordion .card-body {
     background-color: #fff;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -157,7 +185,8 @@ body::before {
 .figma .img-7,
 .figma .img-8,
 .figma .img-9,
-.figma .img-10{
+.figma .img-10
+{
     flex-basis: calc(33.33% - 20px);
     background-size: cover;
     background-position: center;
@@ -165,6 +194,78 @@ body::before {
     margin-bottom: 20px;
     justify-content: center;
 }
+
+
+/* Figma Images */
+.figma-phase3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .img-card {
+    margin: 10px;
+  }
+
+.figma.figma-phase3 .img-card {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    width: 100%; 
+  }
+  
+  .figma.figma-phase3 .img-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .figma.figma-phase3 .img-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .figma.figma-phase3 .img-card:hover .overlay {
+    opacity: 1;
+  }
+  
+  .figma.figma-phase3 .img-card .overlay .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .figma.figma-phase3 .img-card:hover .overlay .btn {
+    opacity: 1;
+  }
+  
+  .figma.figma-phase3 .img-12,
+  .figma.figma-phase3 .img-13 {
+    flex-basis: calc(50% - 20px); 
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    margin: 0 auto 20px auto;
+    justify-content: center;
+  }
 
 .figma .img-1{
     background-image: url(../Images/homepageNutrimix.png);
@@ -197,6 +298,12 @@ body::before {
 }
 .figma .img-9{
     background-image: url(../Images/Admin.png);
+}
+.figma .img-12{
+    background-image: url(../Images/phase3/SearchResults.png);
+}
+.figma .img-13{
+    background-image: url(../Images/phase3/SearchFilterPage.png);
 }
 
 /* Task Table */
@@ -269,6 +376,36 @@ body::before {
         transform: translateY(-10px);
     }
 }
+
+
+.Backend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .Backend h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .Backend img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+
 
 /* On screens smaller than 680px */
 @media (max-width: 680px) {
