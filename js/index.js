@@ -1,6 +1,5 @@
 function openImage(url) {
-
-    var card = document.createElement('div');
+    const card = document.createElement('div');
     card.style.position = 'fixed';
     card.style.top = '0';
     card.style.right = '0';
@@ -15,15 +14,22 @@ function openImage(url) {
         document.body.removeChild(card);
     };
 
-  
-    var img = document.createElement('img');
+    const img = document.createElement('img');
     img.src = url;
     img.style.maxWidth = '80%';
     img.style.maxHeight = '80%';
 
-
     card.appendChild(img);
-
-
     document.body.appendChild(card);
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    const images = document.querySelectorAll('.Backend img');
+  
+
+    images.forEach(image => {
+      image.addEventListener('click', function() {
+        openImage(this.src);
+      });
+    });
+});
