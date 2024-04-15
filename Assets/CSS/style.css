@@ -272,10 +272,10 @@ body::before {
 }
 
 .figma .img-2{
-    background-image: url(./Images/SearchResults.png);
+    background-image: url('../Images/SearchResults.png');
 }
 .figma .img-3{
-    background-image: url(./Images/SearchFilterPage.png);
+    background-image: url(../Images/SearchFilterPage.png);
 }
 
 .figma .img-4{
